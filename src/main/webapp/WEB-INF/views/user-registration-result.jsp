@@ -7,8 +7,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Hello<p>${firstname}
+	Hello
+	<p>${users.firstName}
+	
+	</p>
+	<p>
+		${users.lastName }
+	</p>
+	<p>${users.socialSecurity }
+	</p>
+	<p>${users.shoeSize }
 </p>
-
 </body>
 </html>
