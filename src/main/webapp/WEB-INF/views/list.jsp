@@ -21,7 +21,7 @@
 			<tbody>
 				<c:forEach var="items" items="${items}">
 				<tr>
-					<td><a href ="/" ${items.name }></a></td>
+					<td><a href ="/"></a> ${items.name}</td>
 					<td>${items.description}</td>
 					<td>${items.quantity}</td>
 					<td>${items.price}</td> 

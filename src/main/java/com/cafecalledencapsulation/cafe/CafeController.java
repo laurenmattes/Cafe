@@ -21,6 +21,7 @@ public class CafeController {
 		ModelAndView mav = new ModelAndView("index");
 
 		List<Item> leListOfItems = itemDao.findAll();
+		System.out.println(leListOfItems);
 		return new ModelAndView("list", "items", leListOfItems);
 
 	}

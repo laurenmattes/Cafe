@@ -1,7 +1,5 @@
 package com.cafecalledencapsulation.cafe;
 
-import java.util.List;
-
 public class Item {
 	private String name;
 	private String description;
@@ -52,9 +50,10 @@ public class Item {
 		this.price = price;
 	}
 
-	public static List<Item> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+	@Override
+	public String toString() {
+		return "Item [name=" + name + ", description=" + description + ", quantity=" + quantity + ", price=" + price
+				+ "]";
 	}
 
 }
