@@ -13,26 +13,44 @@ public class Users {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "user_id")
-	private int id;
-	@Column(name = "first", length = 40)
+	@Column(name = "id")
+	private Long id;
+	@Column(name = "firstname")
 	private String firstName;
-	@Column(name = "last", length = 40)
+	@Column(name = "lastname")
 	private String lastName;
-	@Column(name = "social")
+	@Column(name = "socialsecurity")
 	private String socialSecurity;
-	@Column(name = "size")
+	@Column(name = "shoesize")
 	public int shoeSize;
 
 	public Users() {
 
 	}
 
-	public int getId() {
+	public Users(String firstName, String lastName, String socialSecurity, Integer shoeSize) {
+		super();
+
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.socialSecurity = socialSecurity;
+		this.shoeSize = shoeSize;
+	}
+
+	public Users(Long id, String firstName, String lastName, String socialSecurity, Integer shoeSize) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.socialSecurity = socialSecurity;
+		this.shoeSize = shoeSize;
+	}
+
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

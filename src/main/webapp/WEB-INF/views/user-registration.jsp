@@ -16,30 +16,38 @@
 <title>Cafe Registration</title>
 </head>
 <body>
+	
 
 	<form action="/user-registration-result" method="post">
+	<input type="hidden" name="id" value="${users.id}" />
 		<table>
 			<tr>
-			<td><label>First Name </label></td>
-				<td><input type="text" name="firstName" id="firstName" placeholder="Lauren" required minlength="2" maxlength="10" />
+			<td class="form-group"><label for="firstName">First Name </label></td>
+				<td><input class="form-control" type="text" name="firstName" value="${users.firstName }"id="firstName" required minlength="2" maxlength="10" />
 				</td>
+				</tr>
+				<tr>
 				
-				<td><label>Last Name </label></td>
-				<td><input type="text" id="lastName" name="lastName" placeholder="Mattes" pattern="[A-Z][a-z]*"/>
+				<td class="form-group"><label for="lastName">Last Name </label></td>
+				<td><input class="form-control"type="text" id="lastName" name="lastName" value="${users.lastName }" pattern="[A-Z][a-z]*"/>
 				</td>
 			</tr>
 			<tr>
-			<td><label>Social Security Number </label></td>
-				<td><input type="password" name="socialSecurity"  id="socialSecuirty" placeholder="238568">
+			<td class="form-group"><label for="socialSecurity">Social Security Number </label></td>
+				<td><input class="form-control"type="password" name="socialSecurity" value="${users.socialSecurity }" id="socialSecuirty">
 				</td>
-				<td><label>Shoe Size</label></td>
-				<td><input type="number" name="shoeSize" id="shoeSize" placeholder="8" max="18">
+				</tr>
+			<tr>	
+				<td class="form-group"><label for="shoeSize">Shoe Size</label></td>
+				<td><input class="form-control" type="number" name="shoeSize" value="${users.shoeSize }"id="shoeSize" max="18">
 			</td>
 			</tr>
 		
 		</table>
-		<button href="user-registration-result" class="btn btn-dark">Submit</button>
+		<button type="submit" class="btn btn-dark">Submit</button>
+		<a href="/" class="btn btn-link">Cancel</a>
 	</form>
+	
 	<!-- BOOTSTRAP -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

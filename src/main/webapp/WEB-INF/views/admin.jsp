@@ -25,7 +25,10 @@
 					<td><a href ="/edit${id }"></a> ${items.name}</td>
 					<td>${items.description}</td>
 					<td>${items.quantity}</td>
-					<td>${items.price}</td> 
+					<td>${items.price}</td>
+					<td> <a href="/item/update?id=${ items.id }" class="btn btn-light btn-sm">Edit</a>
+						<a href="/item/delete?id=${ items.id }" class="btn btn-light btn-sm">Delete</a>
+					</td> 
 					
 				
 				</tr>

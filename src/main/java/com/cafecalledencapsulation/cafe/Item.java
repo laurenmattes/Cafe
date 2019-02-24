@@ -26,6 +26,15 @@ public class Item {
 
 	}
 
+//	public Item(String name, String description, Integer quantity, Double price) {
+//		super();
+//
+//		this.name = name;
+//		this.description = description;
+//		this.quantity = quantity;
+//		this.price = price;
+//	}
+
 	public Item(Long id, String name, String description, Integer quantity, Double price) {
 		super();
 		this.id = id;
