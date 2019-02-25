@@ -12,10 +12,12 @@
 <title>Cafe Encapsulation</title>
 </head>
 <body>
-
-	Welcome, click <a href="user-registration">here</a> to be encapsulated!<br>
+	<h1>Welcome to Lauren's Website</h1>
+	Welcome, click <a href="user-registration">here</a> to register!<br>
 	
-	<a href="/admin" class="card-link">Admin Access</a>
+	<a href="/admin" class="card-link">Admin Access</a><br>
+
+	
 	<div class="container">
 		<h1>Items</h1>
 		<table class="table">
