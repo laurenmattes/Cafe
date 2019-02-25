@@ -29,15 +29,15 @@
 			    <input class="form-control" id="name" name="name" value="${item.name}" required minlength="2" autocomplete="off">
 			</div>
 			<div class="form-group">
-			    <label for="category">Description</label>
+			    <label for="description">Description</label>
 			    <input class="form-control" id="description" name="description" value="${item.description}" required>
 			</div>
 			<div class="form-group">
-			    <label for="description">Quantity</label>
+			    <label for="quantity">Quantity</label>
 			    <input class="form-control" id="quantity" name="quantity" value="${item.quantity}">
 			</div>
 			<div class="form-group">
-			    <label for="description">Price</label>
+			    <label for="price">Price</label>
 			    <input class="form-control" id="price" name="price" value="${item.price}">
 			</div>
 			<button type="submit" class="btn btn-primary">Submit</button>

@@ -82,6 +82,7 @@ public class CafeController {
 
 	@PostMapping("/item/update")
 	public ModelAndView submitEditForm(Item aItem) {
+
 		itemDao.update(aItem);
 		return new ModelAndView("redirect:/admin");
 	}
@@ -95,7 +96,7 @@ public class CafeController {
 //	@PostMapping("/user-registration-result")
 //	public ModelAndView submitEditProfile(Users aUser, HttpSession session) {
 //		session.setAttribute("profile", aUser);
-//		userDao.create(aUser);
+//
 //		ModelAndView mav = new ModelAndView("redirect:/list");
 //		return mav;
 //	}
