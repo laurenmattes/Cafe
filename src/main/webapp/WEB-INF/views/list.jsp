@@ -13,13 +13,15 @@
 </head>
 <body>
 
-	Welcome, click <a href="user-registration">here</a> to be encapsulated!
+	Welcome, click <a href="user-registration">here</a> to be encapsulated!<br>
+	
+	<a href="/admin" class="card-link">Admin Access</a>
 	<div class="container">
 		<h1>Items</h1>
 		<table class="table">
 			<thead>
 				<tr>
-					<th>Name</th><th>Description</th><th>Quantity</th><th>Price</th><th>Action</th>
+					<th>Name</th><th>Description</th><th>Quantity</th><th>Price</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -29,15 +31,13 @@
 					<td>${items.description}</td>
 					<td>${items.quantity}</td>
 					<td>${items.price}</td> 
-					<td> <a href="/items/update?id=${ items.id }" class="btn btn-light btn-sm">Edit</a>
-						<a href="/items/delete?id=${ items.id }" class="btn btn-light btn-sm">Delete</a>
-					</td>
+					
 				
 				</tr>
 				</c:forEach>
 			</tbody>
 		</table>
-		<a href="/admin" class="card-link">Admin Access</a>
+		
 	</div>
 <!-- BOOTSTRAP -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

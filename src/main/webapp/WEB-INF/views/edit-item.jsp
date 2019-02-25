@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Edit Items</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sketchy/bootstrap.min.css" />
 <!-- Custom CSS goes below Bootstrap CSS -->
 <link rel="stylesheet" href="/style.css" />
@@ -17,6 +17,7 @@
 </head>
 <body>
 <main class="container">
+		<h1>Edit Items</h1>
 		<h1>${ items }</h1>
 		
 		<!-- A form without an action submits back to the same URL, which is what we want here. -->
