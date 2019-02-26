@@ -11,6 +11,7 @@
 <title>Admin</title>
 </head>
 <body>
+<%@include file="partials/header.jsp" %>
 <div class="container">
 		<h1>Items</h1>
 		<table class="table">

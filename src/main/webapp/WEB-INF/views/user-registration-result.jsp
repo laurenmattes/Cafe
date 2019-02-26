@@ -17,6 +17,7 @@
 <title>Cafe</title>
 </head>
 <body>
+<%@include file="partials/header.jsp" %>
 	Hello
 	First Name: <p>${users.firstName}
 	
@@ -26,7 +27,12 @@
 	</p>
 	Social Security Number: <p>${users.socialSecurity }
 	</p>
-	Shoe Size: <p>${users.shoeSize }
-</p>
+	Shoe Size: <p>${users.shoeSize }</p>
+	User Name: <p>${users.username}
+	
+	</p>
+	Password: <p>${users.password}
+	
+	</p>
 </body>
 </html>

@@ -22,28 +22,38 @@ public class Users {
 	@Column(name = "socialsecurity")
 	private String socialSecurity;
 	@Column(name = "shoesize")
-	public int shoeSize;
+	private int shoeSize;
+	@Column(name = "username")
+	private String username;
+	@Column(name = "password")
+	private String password;
 
 	public Users() {
 
 	}
 
-	public Users(String firstName, String lastName, String socialSecurity, Integer shoeSize) {
-		super();
+//	public Users(String firstName, String lastName, String socialSecurity, Integer shoeSize, String username,
+//			String password) {
+//		super();
+//
+//		this.firstName = firstName;
+//		this.lastName = lastName;
+//		this.socialSecurity = socialSecurity;
+//		this.shoeSize = shoeSize;
+//		this.username = username;
+//		this.password = password;
+//	}
 
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.socialSecurity = socialSecurity;
-		this.shoeSize = shoeSize;
-	}
-
-	public Users(Long id, String firstName, String lastName, String socialSecurity, Integer shoeSize) {
+	public Users(Long id, String firstName, String lastName, String socialSecurity, Integer shoeSize, String username,
+			String password) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.socialSecurity = socialSecurity;
 		this.shoeSize = shoeSize;
+		this.username = username;
+		this.password = password;
 	}
 
 	public Long getId() {
@@ -84,6 +94,22 @@ public class Users {
 
 	public void setShoeSize(int shoeSize) {
 		this.shoeSize = shoeSize;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 }

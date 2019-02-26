@@ -16,7 +16,7 @@
 <title>Cafe Registration</title>
 </head>
 <body>
-	
+	<%@include file="partials/header.jsp" %>
 
 	<form action="/user-registration-result" method="post">
 	<input type="hidden" name="id" value="${users.id}" />
@@ -40,6 +40,18 @@
 			<tr>	
 				<td class="form-group"><label for="shoeSize">Shoe Size</label></td>
 				<td><input class="form-control" type="number" name="shoeSize" value="${users.shoeSize }"id="shoeSize" max="18">
+			</td>
+			</tr>
+			</tr>
+			<tr>	
+				<td class="form-group"><label for="username">User Name</label></td>
+				<td><input class="form-control" type="text" name="username" value="${users.userName }"id="username">
+			</td>
+			</tr>
+			</tr>
+			<tr>	
+				<td class="form-group"><label for="password">Password</label></td>
+				<td><input class="form-control" type="password" name="password" value="${users.password }"id="password">
 			</td>
 			</tr>
 		

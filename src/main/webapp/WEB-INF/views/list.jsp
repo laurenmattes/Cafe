@@ -12,8 +12,12 @@
 <title>Cafe Encapsulation</title>
 </head>
 <body>
+<%@include file="partials/header.jsp" %>
 	<h1>Welcome to Lauren's Website</h1>
-	Welcome, click <a href="user-registration">here</a> to register!<br>
+
+	
+	Click <a href="user-registration">here</a> to register!<br>
+	Hello ${ profile.firstName }<br>
 	
 	<a href="/admin" class="card-link">Admin Access</a><br>
 

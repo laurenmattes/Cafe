@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
+<%@include file="partials/header.jsp" %>
 <main class="container">
 		<h1>${ items }</h1>
 		
